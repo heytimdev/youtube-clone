@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout</title>
+  <style>
+    .grid-layout{
+      display: grid;
+      grid-template-columns: 200px 75px;
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: 50px 1fr 75px;
+    }
+    .grid-four{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-layout">
+    <p style="background-color: lightblue;">200px</p>
+    <p style="background-color: lightcoral;">75px</p>
+  </div>
+  <div class="grid">
+    <p style="background-color: lightblue; height: 30px;">50px</p>
+    <p style="background-color: lightcoral;  height: 30px;">1fr</p>
+    <p style="background-color: lightblue;  height: 30px;">75px</p>
+  </div>
+
+  <div class="grid-four">
+    <div>
+      <p style="background-color: lightcoral;  height: 30px;">col1</p>
+    </div>
+    <div>
+      <p style="background-color: lightcoral;  height: 30px;">col2</p>
+    </div>
+    <div>
+      <p style="background-color: lightcoral;  height: 30px;">col3</p>
+    </div>
+    <div>
+      <p style="background-color: lightcoral;  height: 30px;">col4</p>
+    </div>
+
+    <div>
+      <p style="background-color: lightcoral;  height: 30px;">col1</p>
+    </div>
+    <div>
+      <p style="background-color: lightcoral;  height: 30px;">col2</p>
+    </div>
+    <div>
+      <p style="background-color: lightcoral;  height: 30px;">col3</p>
+    </div>
+    <div>
+      <p style="background-color: lightcoral;  height: 30px;">col4</p>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>

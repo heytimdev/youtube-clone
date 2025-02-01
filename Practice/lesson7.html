@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Practice</title>
+  <style>
+    .cat-image{
+      width: 200px;
+      border: none;
+      border-radius: 15px;
+    }
+    .cat-square{
+      width: 200px;
+      border: none;
+      border-width: 2px;
+      margin-left: 15px;
+      object-position: center;
+    }
+    .cat-circle{
+      width: 200px;
+      border: none;
+      border-radius: 50%;
+      margin-left: 15px;
+      
+    }
+    .search-input{
+      font-size: 15px;
+      border: none;
+      border-radius: 7px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gainsboro;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      margin-top: 10px;
+    
+    }
+   
+    .Email{
+      margin-top: 2px;
+      width: 190px;
+      margin-bottom: 7px;
+    }
+    .Privacy{
+      margin-top: 0px;
+      color: grey;
+      font-size: 8.5px;
+      margin-bottom: 7px;
+    }
+    .Agree{
+      background-color: rgb(18, 133, 214);
+      color: white;
+      width: 200px;
+      border: none;
+      border-radius: 20px;
+      text-align: center;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      transition: opacity 0.15s;
+    }
+    .Agree:hover{
+      opacity: 0.5;
+    }
+    .what{
+      vertical-align: middle;
+      border: none;
+      font-size: 15px;
+
+    }
+    
+    .tweet{
+      vertical-align:middle ;
+      background-color:rgb(18, 133, 214) ;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 15px;
+      transition: opacity 0.15s;
+    }
+    .tweet:hover{
+      opacity: 0.5;
+    }
+    .cat-round{
+      width: 36px;
+      border-bottom-right-radius: 36px;
+      border-bottom-left-radius: 36px;
+      border-top-left-radius: 36px;
+      border-top-right-radius: 36px;
+      border: none;
+      border-radius: 100%;
+      vertical-align: middle;
+    }
+    .name-text{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .survey{
+      width: 200px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .yes{
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    .no{
+      vertical-align: middle;
+    }
+    .google{
+      width: 100px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      
+      
+    }
+    .search-bar{
+      width: 400px;
+      border: none;
+      border-radius: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+      margin-left: 10px;
+      margin-top: 0px;
+    }
+    .twitter{
+      box-shadow: 5px 5px 40px rgba(0,0,0,0.2);
+      padding-left: 10px;
+      border: none;
+    
+      border-width: 2px;
+      border-radius: 10px;
+      width: 300px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .tweet{
+      margin-left: 16px;
+    }
+    .google-search{
+      text-align: center;
+    }
+    .g-s{
+      margin-top: 30px;
+      margin-right: 15px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+      border: none;
+    }
+    .lucky{
+      margin-top: 30px;
+      margin-right: 15px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+      border: none;
+    }
+    p{
+      margin: 0;
+      padding: 0;
+    }
+    .cat-card{
+      display: inline-block;
+    }
+    .cat-img{
+      width: 60px;
+      border-radius: 50%;
+    }
+    .cat-img-width{
+      width: 40px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .cat-details{
+      display: inline-block;
+      width: 200px;
+      margin-left: 30px;
+      vertical-align: top;
+      margin-right: 10px;
+      
+    }
+    .follow-button{
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 10px;
+    }
+    .follow{
+      background-color: rgb(28, 117, 219);
+      color: white;
+      border: none;
+      border-radius: 7px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: center;
+      font-size: 17px;
+      transition: opacity 0.15s;
+    }
+    .follow:hover{
+      opacity: 0.5;
+    }
+    .author{
+      font-weight: bold;
+    }
+    .animal, .stats{
+      color: rgb(96,96,96);
+    }
+   
+  
+   
+  </style>
+</head>
+<body>
+ <img class="cat-image" src="siamese-cat-resting-on-sofa_Dasha-Trofimova-Shutterstock.jpg"> 
+ <img class="cat-square" src="siamese-cat-resting-on-sofa_Dasha-Trofimova-Shutterstock.jpg">
+ <img class="cat-circle" src="siamese-cat-resting-on-sofa_Dasha-Trofimova-Shutterstock.jpg"><br>
+ <input class="search-input" type="text" placeholder="Search">
+ <label for="Email" style="color: grey; font-size: 10px;" >Email</label><br>
+ <input type="text" class="Email">
+ <p class="Privacy">By clicking Agree & Join, you agree to the Privacy Policy.</p>
+ <button class="Agree"> Agree & Join </button><br>
+ <div class="twitter">
+ <img  class="cat-round" src="siamese-cat-resting-on-sofa_Dasha-Trofimova-Shutterstock.jpg">
+ <input type="text" placeholder="What's happening?" class="what">
+ <button class="tweet"> Tweet </button>
+</div>
+ <input type="text" placeholder="Name" class="name-text">
+ <input type="text" placeholder="Email"><br>
+
+
+<p class="survey">Thanks for chatting with our customer support.
+  Would you like to take our quick survey?
+ </p>
+ <button class="yes">Yes</button>
+ <button class="no">No</button><br>
+ <div class="google-search">
+ <img src="https://download.logo.wine/logo/Google/Google-Logo.wine.png" class="google"><br>
+ <input class="search-bar" type="text" placeholder="Search Google or type a URL"><br>
+ <button class="g-s">Google Search </button>
+ <button class="lucky">I'm Feeling Lucky</button>
+</div><br>
+<div class="cat-card">
+  <div class="cat-img-width">
+    <img class="cat-img" src="siamese-cat-resting-on-sofa_Dasha-Trofimova-Shutterstock.jpg">
+  </div>
+  <div class="cat-details">
+    <p class="author">Oliver</p>
+    <p class="animal">the cat</p>
+    <p class="stats">Popular</p>
+  </div>
+  <div class="follow-button">
+    <button class="follow">Follow</button>
+  </div>
+</div>
+
+</body>
+</html>

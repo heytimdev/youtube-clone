@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      height: 3000px;
+    }
+     .position{
+      position: absolute;
+      top: -7px;
+      left: -4px;
+      background-color: black;
+      color: white;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-right: 7px;
+      padding-left: 7px;
+      border-radius: 12px;
+    }
+    .bottom-right{
+      position: fixed;
+      width: 320px;
+      height: 180px;
+      background-color: gray;
+      bottom: 50px;
+      right: 10px;
+    }
+    .video-count{
+      position: absolute;
+      background-color: black;
+      color: white;
+      bottom: 8px;
+      right: 5px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+    .shirt-position{
+      position: relative;
+      display: inline-block;
+      border-width: 1px;
+      border-color: gray;
+      border-style: solid;
+      padding-left: 20px;
+      padding-right: 20px;
+      
+      
+
+     
+    }
+    .shirt{
+      width: 150px;
+    
+    }
+    .promo{
+      position: absolute;
+      right: 0;
+      top: 5px;
+      background-color: black;
+      color: white;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      font-size: 13px;
+
+    }
+    .cart{
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: white;
+      border-color: black;
+      border-style: solid;
+      border-width: 2px;
+      position: relative;
+      bottom: 20px;
+      left: 30px;
+      transition: opacity 0.15s ease;
+      
+    }
+    .cart:hover{
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="bottom-right">
+    <div class="position">
+      X
+    </div>
+    <div class="video-count">
+      3:26 
+    </div>
+  </div>
+  <div class="shirt-position">
+    <img class="shirt" src="61H7QaupTUL._SLDPMOBCAROUSELAUTOCROP288221_MCnd_AC_SR462,693_.jpg" >
+    <div class="promo">
+      20% OFF 
+    </div>
+    <div>
+      <button class="cart"> Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>

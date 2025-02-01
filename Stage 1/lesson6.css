@@ -1,0 +1,16 @@
+p{
+  font-family: montserrat;
+}
+.main{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 60px;
+  margin-bottom: 0px;
+}
+.sub{
+margin-top: 0px;
+}
+.sub-sub{
+text-decoration: underline;
+
+}

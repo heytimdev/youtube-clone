@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS POSTION </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  <style>
+    body{
+      height: 3000px;
+      background-color: black;
+      font-family: Roboto, arial;
+      padding-top: 100px;
+      padding-left: 200px;
+
+    }
+    p{
+      font-family: Roboto, arial;
+    }
+    .header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+    .left-section{
+      display: flex;
+      align-items: center;
+      margin-left: 100px;
+    }
+    .img{
+      width: 40px;
+      border-radius: 20px;
+    }
+    .author{
+      margin-left: 7px;
+
+    }
+    .right-section{
+      display: flex;
+      align-items: center;
+      margin-right: 100px;
+    }
+    .add-friend{
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: rgb(38, 138, 219);
+      border: none;
+      border-radius: 5px;
+      color: white;
+      margin-right: 5px;
+      transition: opacity 0.15s ease;
+      font-weight: medium;
+    }
+    .add-friend:hover{
+      opacity: 0.7;
+    }
+    .message{
+      height: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border: none;
+      color: black;
+      border-radius: 5px;
+      background-color: rgb(218, 218, 218);
+      font-weight: medium;
+      transition: opacity 0.15s ease;
+    }
+    .message:hover{
+      opacity: 0.8;
+    }
+    .sidebar{
+      position: fixed;
+      top: 50px;
+      bottom: 0;
+      left: 0;
+      background-color: rgb(57, 57, 57);
+      width: 80px;
+    }
+    .sidebar-flex{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+    .img-new{
+      width: 60px;
+      border-radius: 30px;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    .second-sidebar{
+      position: fixed;
+      top: 50px;
+      left: 80px;
+      bottom: 0;
+      background-color: rgb(72, 72, 72);
+      width: 200px;
+    }
+    .first-layout{
+     
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 0;
+      height: 20px;
+    }
+    .second-layout{
+      margin-top: 0;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      color: rgb(174, 171, 171); 
+    }
+   
+   
+  </style>
+</head>
+<body>
+  <div class="header">
+
+    <div class="left-section">
+    <img class="img" src="channel-1.jpeg">
+    <p class="author">Oliver Cat</p>
+
+    </div>
+
+    <div class="right-section">
+      <button class="add-friend">Add Friend</button>
+      <button class="message">Message</button>
+
+    </div>
+  </div>
+
+  <div class="sidebar">
+      <div class="sidebar-flex">
+        <img class="img-new" src="channel-1.jpeg">
+      </div>
+
+      <div class="sidebar-flex">
+        <img class="img-new" src="channel-1.jpeg">
+      </div>
+
+      <div class="sidebar-flex">
+        <img class="img-new" src="channel-1.jpeg">
+      </div>
+
+  </div>
+
+  <div class="second-sidebar">
+    <div class="first-layout">
+      <p style="color: white; font-size: 16px; margin-left: 10px;">INFO</p>
+      <p style="font-size: 25px; color: rgb(174, 171, 171); margin-right: 10px;">&plus;</p>
+    </div>
+
+    <div class="second-layout">
+      <p>&#35; new-videos </p>
+      <p>&#35; updates</p>
+      <p>&#35; faq</p>
+
+    </div>
+
+  </div>
+  <div class="position">
+    X
+  </div>
+
+  
+</body>
+</html>

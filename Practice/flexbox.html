@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexBox Practice</title>
+  <style>
+    .main-flex{
+      display: flex;
+      flex-direction: row;
+      height: 20px;
+      margin-bottom: 20px;
+    }
+    .first{
+      background-color: lightblue;
+      width: 200px;
+    }
+    .second{
+      background-color: lightpink;
+      width: 75px;
+    }
+    .firstt{
+      background-color: lightblue;
+      width: 50px;
+    }
+    .secondd{
+      background-color: lightpink;
+      flex: 1;
+    }
+    .thirdd{
+      background-color: lightblue;
+      width: 75px;
+    }
+    .four-flex{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .flex-two{
+      display: flex;
+      flex-direction: row;
+      border-color: black;
+      border-width: 1px;
+      border-style: solid;
+      margin-top: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      justify-content: space-between;
+      
+    }
+    .new-flex{
+      border-color: gray;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 5px;
+      margin-top: 20px;
+      padding-left: 10px;
+      width: 350px;
+    }
+    .challenge-first,.challenge-second,.challenge-third{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      
+    }
+    .text{
+      background-color: rgb(42, 159, 231);
+      color: white;
+      border-radius: 20px;
+      border-style: solid;
+      text-align: center;
+      margin-right: 10px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      border: none;
+    }
+    p{
+      margin: 0;
+    }
+    .cat-flex{
+      display: flex;
+      flex-direction: row;
+      width: 300px;
+      margin-top: 20px;
+    }
+    .channel-pic{
+      width: 50px;
+      border-radius: 50%;
+    }
+    .follow{
+      border: none;
+      border-radius: 4px;
+      background-color: rgb(49, 143, 237);
+      color: white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: opacity 0.15s;
+    }
+    .follow:hover{
+      opacity: 0.5;
+    }
+    .flex-new{
+      display: flex;
+      flex-direction: row;
+      width: 700px;
+      margin-top: 20px;
+      background-color: rgba(80, 5, 150, 0.594);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .search{
+      width: 450px;
+      border-radius: 20px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 10px;
+      border: none;
+      background-color: white;
+      color: black;
+    }
+    .download{
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-left: 13px;
+      padding-right: 13px;
+      text-align: center;
+      border: none;
+      background-color: transparent;
+      border-style: solid;
+      border-width: 1px;
+      border-color: white;
+      color: white;
+      transition: opacity 0.15s;
+     
+    }
+    .download:hover{
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-flex">
+    <div class="first">
+      200px 
+    </div>
+    <div class="second">
+      75px
+    </div>
+  </div>
+
+  <div class="main-flex">
+    <div class="firstt">
+      50px 
+    </div>
+    <div class="secondd">
+      flex 1
+    </div>
+    <div class="thirdd">
+      75px
+    </div>
+  </div>
+
+  <div class="four-flex">
+    <div style="background-color: lightpink;">
+      item1
+    </div>
+    <div style="background-color: lightpink;">
+      item2
+    </div>
+    <div style="background-color: lightpink;">
+      item3
+    </div>
+    <div style="background-color: lightpink;">
+      item4
+    </div>
+  </div>
+  
+  <div class="flex-two">
+    <div style="background-color: lightpink;">
+      item1
+    </div>
+    <div style="background-color: lightpink;">
+      item2
+    </div>
+  </div>
+
+  <div class="new-flex">
+  <div class="challenge-first">
+    <div  style="width: 200px; ">
+      <p>Home</p>
+      </div>
+      <div style="width: 50px;">
+        <p class="text">14</p>
+      </div>
+  </div>
+
+  <div class="challenge-second">
+    <div style="width: 200px;">
+      <p>Notifications</p>
+    </div>
+    <div style="width: 50px;">
+      <p class="text">3</p>
+    </div>
+  </div>
+
+  <div class="challenge-third">
+    <div style="width: 200px;">
+      <p>Messages</p>
+    </div>
+    <div style="width: 50px;">
+      <p class="text">5</p>
+    </div>
+  </div>
+</div>
+
+<div class="cat-flex">
+<div style="width: 50px; margin-right: 15px;">
+  <img class="channel-pic" src="channels/channel-1.jpeg">
+</div>
+<div style="width: 160px;">
+  <p style="font-weight: bold;">Oliver</p>
+  <p style="color: rgb(96,96,96); font-size: 15px;">the cat</p>
+  <p style="color: rgb(96,96,96); font-size: 14px;">Popular</p>
+</div>
+<div style="width: 50px;">
+  <button class="follow">Follow</button>
+</div>
+</div>
+
+<div class="cat-flex">
+  <div style="width: 50px; margin-right: 15px;">
+    <img class="channel-pic" src="channels/channel-2.jpeg">
+  </div>
+  <div style="width: 160px;">
+    <p style="font-weight: bold;">Adwoa</p>
+    <p style="color: rgb(96,96,96); font-size: 15px;">the cat</p>
+    <p style="color: rgb(96,96,96); font-size: 14px;">Popular</p>
+  </div>
+  <div style="width: 50px;">
+    <button class="follow">Follow</button>
+  </div>
+  </div>
+
+  <div class="cat-flex">
+    <div style="width: 50px; margin-right: 15px;">
+      <img class="channel-pic" src="channels/channel-3.jpeg">
+    </div>
+    <div style="width: 160px;">
+      <p style="font-weight: bold;">Tim</p>
+      <p style="color: rgb(96,96,96); font-size: 15px;">the cat</p>
+      <p style="color: rgb(96,96,96); font-size: 14px;">Popular</p>
+    </div>
+    <div style="width: 50px;">
+      <button class="follow">Follow</button>
+    </div>
+    </div>
+
+
+    <div class="flex-new">
+      <div style="width: 80px; font-weight: bold; color: white; margin-left: 20px;"> Home </div>
+      <div style="width: 500px;">
+        <input class="search" type="text" placeholder="Search">
+      </div>
+      <div style="width: 100px;">
+        <button class="download"> Download </button>
+      </div>
+    </div>
+</body>
+</html>

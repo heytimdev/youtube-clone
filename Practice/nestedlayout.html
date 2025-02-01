@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <title>NESTED LAYOUT</title>
+  <style>
+    
+    p{
+      font-family: Roboto, arial;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .thumbnail{
+      display: inline-block;
+      margin-bottom: 8px;
+
+    }
+    .youtube-pic{
+      width: 200px;
+    }
+    .video-description{
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 7px;
+      margin-top: 3px;
+    }
+    .caption{
+      width: 220px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .author, .stats{
+      color: rgb(96,96,96);
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+    .cat-img{
+      width: 170px;
+    }
+    .cat{
+      width: 170px;
+      margin-bottom: 0;
+    }
+    .mutual-friend{
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .mutual{
+      width: 30px;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    .friends{
+      display: inline-block;
+      color: rgb(96,96,96);
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .author-name{
+      margin-bottom: 4px;
+      font-weight: 500;
+      font-size: 18px;
+      
+    }
+    .cat-card{
+      border-color: rgb(214, 203, 203);
+      border-style: solid;
+      border-width: 2px;
+      display: inline-block;
+      border-radius: 2px;
+    }
+    .cat-details{
+      margin-left: 10px;
+      
+    }
+    .add-friend{
+      margin-bottom: 10px;
+      background-color: rgb(48, 124, 238);
+      color: white;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-left: 12px;
+      padding-right: 12px;
+      text-align: center;
+      border-radius: 5px;
+      border: none;
+      transition: opacity 0.15s;
+    }
+
+    .add-friend:hover{
+      opacity: 0.7;
+    }
+    .add-box{
+      display: inline-block;
+    }
+    
+  </style>
+</head>
+<body>
+  <div>
+    <div class="thumbnail">
+      <img class="youtube-pic" src="thumbnails/thumbnail-2.webp">
+    </div>
+    <div class="video-description">
+      <p class="caption">
+      How to compete against CS degrees (as a self taught-dev)
+      </p>
+      <p class="author">
+      SuperSimpleDev
+      </p>
+      <p class="stats">
+        1.5K views &#183; 4 months ago
+      </p>
+    </div>
+    <div>
+      <div class="thumbnail">
+        <img class="youtube-pic" src="thumbnails/thumbnail-2.webp">
+      </div>
+      <div class="video-description">
+        <p class="caption">
+        How to compete against CS degrees (as a self taught-dev)
+        </p>
+        <p class="author">
+        SuperSimpleDev
+        </p>
+        <p class="stats">
+          1.5K views &#183; 4 months ago
+        </p>
+      </div>
+  </div>
+  <div class="cat-card">
+    <div class="cat-img">
+      <img class="cat" src="siamese-cat-resting-on-sofa_Dasha-Trofimova-Shutterstock.jpg">
+    </div>
+    <div class="cat-details">
+      <p class="author-name"> oliver </p>
+    <div class="mutual-friend">
+      <img class="mutual" src="channels/channel-1.jpeg">
+    </div>
+    <div class="add-box">
+      <p class="friends">2 mutual friends</p>
+    </div>
+    <div >
+      <button class="add-friend">Add Friend </button>
+    </div>
+
+    </div>
+  </div>
+</body>
+</html>
